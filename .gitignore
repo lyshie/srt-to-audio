@@ -3,6 +3,9 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+# sound files
+sounds/*.mp3
+
 # Node artifact files
 node_modules/
 dist/
