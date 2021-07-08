@@ -1,29 +1,21 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Generate voices from SRT file (subtitles).
 
-### What is this repository for? ###
+### Requirements ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+```
+$ pip install --user --upgrade -r requirements.txt
+```
 
-### How do I get set up? ###
+### Usage ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+```
+$ python srt-to-voice.py -f input.srt -o audio.mp3
 
-### Contribution guidelines ###
+$ ffmpeg -i video.mp4 -i audio.mp3 -c copy -map 0:v:0 -map 1:a:0 output.mp4
+```
 
-* Writing tests
-* Code review
-* Other guidelines
+### Author ###
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+SHIE, Li-Yi <lyshie@tn.edu.tw>
